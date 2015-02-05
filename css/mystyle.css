@@ -6,55 +6,11 @@ html {
   box-sizing: inherit;
 }
 
-.top-navigation
-.links {
-float: right;
-color: #838994;
-font-size: 1.04rem;
-margin-top: 1.7rem;
-}
-
-.top-navigation {
-    background-color: #fff;
-}
-
-.top-navigation > .content {
-    margin: 0 auto;
-    width: 970px;
-    height: 70px;
-}
-
-.top-navigation .logo {
-    height: 70px;
-}
-
-.content {
-	width: 60%;
-	padding: 0 0.938rem;
-	margin: 0 auto;
-	min-width: 37.5rem;
-}
-
-.introduction h1 {
-margin-top: 17.5rem;
-font-size: 3.125rem;
-}
-
-.introduction h1
-.introduction h3 {
-color: white;
-text-align: center;
-font-weight: 300;
-}
-
-
-
-
-
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
  */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,26 +24,151 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
+
+/**
+ * HTML5 display-role reset for older browsers
+ */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
-/* End of Reset */
+    list-style: none;
+}
+/**
+ * End of Reset
+ */
 
-/* Start of Custom Styles */
+/**
+ * Start of Custom Styles
+ */
+body {
+    /*background-color: LightGray;*/
+    font-family: 'Roboto', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+}
+div {
+    /*border: 1px solid Chocolate;*/
+}
+
 .content {
-    padding: 0 15px;
+	width: 46rem;
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
+
+/**
+ * Navigation Section
+ */
+
+ .top-navigation {
+    background-color: #fff;
+    position fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
+}
+
+.top-navigation > .content {
+    height: 4.375rem;
+}
+
+.top-navigation .logo {
+    height: 4.375rem;
+}
+
+.top-navigation .links {
+	float: right;
+	color: #838994;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
+}
+
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+
+.top-navigation .links li .active {
+	color: #4c5058
+	font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+/**
+ * Introduction Section
+ */
+
+ .introduction {
+    background-image: url('C:/Users/RichardOffice/Desktop/Thinkful/Front%20End%20Development/Projects/Startup%20Landing%20Page%20Clone/images/img/first-background.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+
+ .introduction h1,
+.introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+
+.introduction h3 {
+    margin-top: 1.25rem;
+    font-size: 1.563rem;
+}
+
+/**
+ * The buttons
+ */
+
+ .introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+/**
+ * button
+ */
+
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
+
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
 }
