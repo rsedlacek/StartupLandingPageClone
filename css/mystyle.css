@@ -117,7 +117,7 @@ div {
  */
 
  .introduction {
-    background-image: url('C:/Users/RichardOffice/Desktop/Thinkful/Front%20End%20Development/Projects/Startup%20Landing%20Page%20Clone/images/img/first-background.jpg');
+    background-image: url('/img/first-background.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
